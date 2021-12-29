@@ -1,4 +1,4 @@
-from todo import app
+from app import app
 
 if __name__ == "__main__":
-    todo.run()
+    app.run()
