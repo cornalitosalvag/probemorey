@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath todo todo.wsgi
+web: gunicorn todo.wsgi:app
