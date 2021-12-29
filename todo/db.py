@@ -8,10 +8,10 @@ from .schema import instructions
 def get_db():
     if 'db' not in g:
         g.db = mysql.connector.connect(
-                host='ble5mmo2o5v9oouq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',
-                user='u4jofa5m2zaocsu7',
-                password='tqkb217eerv38ddo',
-                database='ir5mplk9rirjxupk'
+                host=current_app.config['DATABASE_HOST'],
+                user=current_app.config['DATABASE_USER'],
+                password=current_app.config['DATABASE_PASSWORD'],
+                database=current_app.config['DATABASE']
                 )
         g.c = g.db.cursor(dictionary=True)
     return g.db, g.c
