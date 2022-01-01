@@ -1,1 +1,1 @@
-web: export FLASK_APP=todo; export FLASK_DATABASE_HOST='ble5mmo2o5v9oouq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'; export FLASK_DATABASE_PASSWORD='tqkb217eerv38ddo'; export FLASK_DATABASE_USER='u4jofa5m2zaocsu7'; export FLASK_DATABASE='ir5mplk9rirjxupk'; gunicorn "todo:create_app()"
+web: gunicorn "todo:create_app()"
