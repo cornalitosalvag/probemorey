@@ -1,0 +1,499 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+body {
+  background-color: rgb(217, 85, 80);
+  height: 80vh;
+  display: block;
+  margin: 8px;
+}
+.links {
+  text-decoration: none;
+}
+.fuentes {
+  font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+.cursores {
+  cursor: default !important;
+  /* font-size: 13px; */
+  /* font-weight: bold; */
+  text-transform: uppercase;
+}
+input:focus,
+button:focus,
+textarea:focus {
+  outline: none;
+}
+
+.red {
+  color: red;
+}
+h2 {
+  margin: 0;
+  color: white;
+  font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+.subtitulo {
+  margin: 0;
+  font-size: 15px;
+  color: white;
+  font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+.memo {
+  margin-top: 18px;
+}
+div {
+  display: block;
+}
+/* logo titulo app */
+.eWatmt {
+  width: 20px;
+  margin-right: 4px;
+}
+
+/* englova el espacio del div general */
+.hEhBUS {
+  padding: 0px 12px;
+  max-width: 620px;
+  margin: auto;
+}
+/* div general */
+.bOJlSs {
+  background-color: inherit;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* clase de pomofocus */
+.eDhFgq {
+  display: inline-block;
+  color: white;
+  margin: 0px;
+  padding: 10px 0px;
+  font-size: 23px;
+  font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+/* clase de los logs */
+
+.caepzu {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+}
+/* botones */
+.ecshkw {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.9;
+  background: none rgba(255, 255, 255, 0.2);
+  box-shadow: none;
+  margin-left: 10px;
+  font-size: 13px;
+  padding: 8px 12px;
+  min-width: 70px;
+  border: none;
+  color: white !important;
+}
+/* logo del boton */
+.hINVtW {
+  width: 16px;
+}
+/* letras del boton */
+.gkSMJF {
+  display: block;
+  margin-left: 4px;
+}
+
+/* linea chochera */
+.kRqbCZ {
+  display: block;
+  background-color: rgba(0, 0, 0, 0.1);
+  height: 1px;
+  margin-bottom: 40px;
+}
+
+/* ordenar lo de abajo  ok*/
+.hEhBUS {
+  padding: 0px 12px;
+  max-width: 620px;
+  margin: auto;
+}
+/* centra? */
+.iXfEkz {
+  text-align: center;
+}
+/* engoba principal ok */
+.klwxIz {
+  max-width: 480px;
+  margin: 20px auto 42px;
+}
+
+/* engloba */
+.OCDuY {
+  max-width: 480px;
+  margin: 20px auto 42px;
+}
+/* titulo ok */
+.hjwVit {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 14px;
+  margin-bottom: 18px;
+}
+/* texto titulo */
+.gNEBjN {
+  font-size: 18px;
+  font-weight: bold;
+}
+/* titulo */
+.bgYAXY {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+  padding-bottom: 14px;
+}
+
+/* envoltorio principal tareas ok*/
+.cmBgVX {
+  width: 100%;
+  background-color: white;
+  box-shadow: rgb(0 0 0 / 10%) 0px 4px 4px;
+  border-radius: 4px;
+  /* cursor: pointer; */
+  margin-top: 8px;
+  text-align: left;
+  font-size: 16px;
+  box-sizing: border-box;
+  border-left: 6px solid transparent;
+  transition: unset;
+}
+
+/* evuelve especifico cada  tareas*/
+.hPcLhU {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+/* la tarea */
+.jFXLnO {
+  display: flex;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  padding: 18px 0px 18px 14px;
+  overflow-wrap: break-word;
+  width: 40%;
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  color: rgb(85, 85, 85);
+}
+/* tilde de la tarea */
+.tilde {
+  display: inline-block;
+  margin-right: 10px;
+
+  font-size: 26px;
+}
+
+/* items de las tarea ok*/
+.iWIiAw {
+  /* display: flex; */
+  /* -webkit-box-align: center; */
+  /* align-items: center; */
+  /* width: 30px; */
+  padding-right: 14px;
+  /* text-align: center; */
+}
+/* editar */
+.dtgVaS {
+  text-decoration: none;
+  display: inline-block;
+  color: rgb(232 99 99);
+  font-weight: bold;
+  margin-right: 18px;
+  width: 40px;
+  font-size: 18px;
+  text-align: right;
+}
+
+/* estetica del boton ok */
+.bbfodJ {
+  cursor: pointer;
+  /* border: 1px solid rgb(223, 223, 223); */
+  border: none;
+  border-radius: 4px;
+  padding: 10px 5px;
+  background-color: white;
+  width: 30px;
+  font-size: 20px;
+}
+/* item del final tarea */
+.diliiT {
+  width: 30px;
+  padding-right: 14px;
+  text-align: center;
+}
+
+/* letras de la tarea */
+.hMzHoF {
+  color: rgb(85, 85, 85);
+  font-weight: bold;
+  width: 85%;
+  overflow: hidden;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 1.5em;
+}
+
+/* loguin------------------ */
+.kpsPWn {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: rgb(196 196 196) 0px 1px 0px;
+  padding: 8px 18px 32px;
+  box-sizing: border-box;
+  width: 100%;
+}
+/* email */
+.kQKBvK {
+  display: block;
+  color: rgb(196, 196, 196);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+/* infor */
+.gCBBEJ {
+  border-radius: 4px;
+  background-color: rgb(239, 239, 239);
+  font-size: 16px;
+  padding: 12px 10px;
+  box-shadow: none;
+  border: none;
+  color: rgb(85, 85, 85);
+  width: 100%;
+  box-sizing: border-box;
+}
+/* boton */
+.fdeTbp {
+  margin-top: 28px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 2px;
+  color: white;
+  opacity: 0.9;
+  font-size: 14px;
+  padding: 12px;
+  min-width: 70px;
+  background-color: rgb(34, 34, 34);
+  border: 2px solid rgb(34, 34, 34);
+  width: 100%;
+}
+.fdeTbp:hover {
+  opacity: 1;
+}
+
+/* sin ussuario? */
+.iziuDH {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+/* nueva tarea */
+.inuAKn {
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.8;
+  margin-top: 12px;
+  border: 2px dashed rgba(255, 255, 255, 0.4);
+}
+.inuAKn:hover {
+  opacity: 1;
+}
+/* palabra nueva tarea */
+.iRkBTm {
+  font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+  color: white;
+  opacity: 0.8;
+  font-weight: bold;
+}
+/* icono nueva tarea */
+.eDIJZH {
+  color: white;
+  width: 18px;
+  margin-right: 8px;
+  opacity: 0.8;
+  font-size: 20px;
+}
+/* cuadrado cheto editar */
+.bDuesm {
+  background-color: white;
+  border-radius: 8px;
+  text-align: left;
+  margin-top: 12px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 10px 20px, rgb(0 0 0 / 10%) 0px 3px 6px;
+  animation: 0.1s ease-in-out 0s 1 normal none running expand;
+}
+/* sub recuadro */
+.pMNkX {
+  padding: 10px 20px 0px;
+}
+/* lo que se va editar o donde va el texto */
+.dvFLAw {
+  position: relative;
+  padding: 8px 0px 18px;
+}
+.jVoeih {
+  padding: 8px 0px;
+}
+.dmnlKK {
+  border-radius: 4px;
+  font-size: 22px;
+  padding: 10px 0px;
+  box-shadow: none;
+  border: none;
+  color: rgb(85, 85, 85);
+  width: 100%;
+  box-sizing: border-box;
+  font-weight: bold;
+}
+.dmnlKK::placeholder {
+  opacity: 0.5;
+}
+/* ultimo baner guardar cancelar(patra) */
+.hCdQli {
+  padding: 14px 20px;
+  text-align: right;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: rgb(239, 239, 239);
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+/* alineado a la derecha */
+.left {
+  float: right;
+  width: 100%;
+  overflow: auto;
+}
+/* cancelar */
+.jhqZwE {
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  opacity: 0.9;
+  font-size: 16px;
+  padding: 8px 12px;
+  min-width: 70px;
+  display: inline-block;
+  margin-right: 14px;
+  background: none;
+  border: none;
+  color: rgb(136, 136, 136);
+  font-weight: bold;
+  box-shadow: none;
+}
+/* guardar */
+.hrCnhU {
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 2px;
+  color: white;
+  opacity: 0.9;
+  font-size: 14px;
+  padding: 8px 12px;
+  min-width: 70px;
+  border: 2px solid rgb(171, 171, 171);
+  pointer-events: none;
+  display: inline-block;
+  background-color: rgb(171, 171, 171);
+}
+
+/* botton activo */
+.gfRDmQ {
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: rgb(0 0 0 / 20%) 0px 2px 2px;
+  color: white;
+  opacity: 0.9;
+  font-size: 14px;
+  padding: 8px 12px;
+  min-width: 70px;
+  background-color: rgb(34, 34, 34);
+  border: 2px solid rgb(34, 34, 34);
+  display: inline-block;
+}
