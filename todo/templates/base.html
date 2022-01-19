@@ -1,24 +1,42 @@
 <!doctype html>
-<title>{% block title %}{% endblock %} - Todo List</title>
+<title>{% block title %}{% endblock %} - To-do List</title>
+<script src="https://kit.fontawesome.com/ad87122803.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-<nav>
-	<h1>Todo List</h1>
-	<ul>
-		{% if g.user %}
-			<li><span>{{ g.user['username'] }}</span></li>
-			<li><a href="{{ url_for('auth.logout') }}">Cerrar sesión</a></li>
-		{% else %}
-			<li><a href="{{ url_for('auth.register') }}">Registrarse</a></li>
-			<li><a href="{{ url_for('auth.login') }}">Iniciar sesión</a></li>
-		{% endif %}
-	</ul>
-</nav>
-<section class="content">
-	<header>
-		{% block header %}{% endblock %}
-	</header>
-	{% for message in get_flashed_messages() %}
-	<div class="flash">{{ mesage }}</div>
-	{% endfor %}
-	{% block content %}{% endblock %}
-</section>
+
+<div class="hEhBUS ">
+	<nav class="bOJlSs">
+		<h1 class="eDhFgq"><i class="fas fa-clipboard-check eWatmt "></i>Lista de Tareas</h1>
+		<section class="caepzu">
+			{% if g.user %}
+			<span title="Usuario" class="ecshkw cursores"><i class="fas fa-user-alt hINVtW"></i><span
+					class="gkSMJF cursores">{{
+					g.user['username']
+					}}</span></span>
+			<a title="Salir" class="links" href="{{ url_for('auth.logout') }}"><button class="ecshkw"><i
+						class="fas fa-sign-out-alt hINVtW"></i><span class="gkSMJF">Cerrar
+						sesión</span></button></a>
+			{% else %}
+			<a title="Registrate" class="links" href="{{ url_for('auth.register') }}"><button
+					class="ecshkw">Registrarse</button></a>
+			<a title="Ingresa" class="links" href="{{ url_for('auth.login') }}"><button class="ecshkw"><i
+						class="fas fa-user-circle hINVtW"></i><span class="gkSMJF">Iniciar
+						sesión</span></button></a>
+			{% endif %}
+		</section>
+
+	</nav>
+	<span class="kRqbCZ"></span>
+
+	<section class="content klwxIz">
+		<header class="hjwVit">
+			{% block header %}{% endblock %}
+		</header>
+		{% for message in get_flashed_messages() %}
+		<div class="flash">{{ mesage }}</div>
+		{% endfor %}
+
+		{% block content %}{% endblock %}
+
+	</section>
+
+</div>

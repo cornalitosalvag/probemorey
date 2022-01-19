@@ -1,15 +1,31 @@
 {% extends 'base.html' %}
 
 {% block header %}
-	<h1>{% block title %}Iniciar sesión{% endblock %}</h1>
+<h2>{% block title %}Iniciar sesión{% endblock %}</h2>
 {% endblock %}
 
 {% block content %}
-	<form method="POST">
+<!-- <form method="POST">
 		<label for="username">Username</label>
 		<input name="username" id="username" required>
 		<label for="password">Password</label>
 		<input type="password" name="password" id="password" required>
 		<input type="submit" value="Iniciar sesión" >
-	</form>
+	</form> -->
+
+<form class="kpsPWn memo" method="POST">
+	<label class="kQKBvK" for="username">Nombre de Usuario</label>
+	<input class="gCBBEJ" name="username" id="username" required>
+	<label class="kQKBvK" for="password">Contraseña</label>
+	<input class="gCBBEJ" type="password" name="password" id="password" required>
+	<input class="fdeTbp" type="submit" value="Inicia sesión">
+</form>
+
+<!-- <div class="sc-hlILIN kpsPWn">
+</div>
+<div class="sc-TuwoP kQKBvK">Email</div><input placeholder="example@mail.com" class="sc-gAmQfK gCBBEJ" value="">
+<div class="sc-TuwoP kQKBvK">Password</div><input type="password" class="sc-gAmQfK gCBBEJ" value="">
+<div class="sc-fCPvlr jczJFV"><button class="sc-bxivhb sc-VigVT fdeTbp">Log in with Email</button></div>
+<div class="sc-hAXbOi iziuDH"><button class="sc-bxivhb sc-gZMcBi gTtLHX">Forgot Password</button></div>
+</div> -->
 {% endblock %}
