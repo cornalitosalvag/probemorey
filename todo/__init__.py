@@ -25,7 +25,7 @@ def create_app():
 
     @app.route('/hola')
     def hola():
-        return 'pichuletincito'
+        return 'pichuletincito y pichulitencita💕'
 
     return app
 
