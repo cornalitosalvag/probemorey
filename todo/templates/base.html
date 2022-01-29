@@ -3,9 +3,9 @@
 <script src="https://kit.fontawesome.com/ad87122803.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-<div class="hEhBUS ">
+<div class="blocke-principal">
 	<nav class="bOJlSs">
-		<h1 class="eDhFgq"><i class="fas fa-clipboard-check eWatmt "></i>Lista de Tareas</h1>
+		<h1 class="eDhFgq"><i class="fas fa-clipboard-check logo-app "></i>Lista de Tareas</h1>
 		<section class="caepzu">
 			{% if g.user %}
 			<span title="Usuario" class="ecshkw cursores"><i class="fas fa-user-alt hINVtW"></i><span
@@ -31,9 +31,13 @@
 		<header class="hjwVit">
 			{% block header %}{% endblock %}
 		</header>
+
 		{% for message in get_flashed_messages() %}
-		<div class="flash">{{ mesage }}</div>
+		<div class="flash">
+			<p>{{ message }}</p>
+		</div>
 		{% endfor %}
+
 
 		{% block content %}{% endblock %}
 
