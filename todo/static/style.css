@@ -3,6 +3,10 @@
   padding: 0;
 } */
 
+html{
+  margin: 8px;
+}
+
 body {
   background-color: rgb(217, 85, 80);
   /* height: 80vh; */
