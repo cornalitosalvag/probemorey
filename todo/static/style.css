@@ -106,7 +106,7 @@ h2 {
   background: none rgba(255, 255, 255, 0.2);
   box-shadow: none;
   margin-left: 10px;
-  font-size: 13px;
+  /* font-size: 13px; */
   padding: 8px 12px;
   min-width: 70px;
   border: none;
@@ -115,7 +115,7 @@ h2 {
 
 /* logo del botones loguin */
 .icono-log {
-  width: 16px;
+  font-size: 15px;
 }
 
 /* letras del boton log */
@@ -476,6 +476,22 @@ h2 {
 .cheche input:checked ~ .checkmarkk {
   color: rgb(85, 85, 85);
   text-decoration: line-through double red;
+}
+
+@media only screen and (max-width: 576px) {
+  /* letras del loguin */
+  .letras-log {
+    display: none;
+  }
+  /* iconos boton-logueo */
+  .boton-logueo {
+    padding: 8px;
+    min-width: auto;
+  }
+  /* icono de logueo */
+  .icono-log {
+    font-size: 17px;
+  }
 }
 
 /* buscar la manera de no repetir contenido de las clases, por ejemplo la clase fuentes puede ser agregada para no repetir la fuente
