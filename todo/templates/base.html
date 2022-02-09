@@ -2,45 +2,45 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Applicacion para crear lista de tareas con usuarios privado realizada en Python-Flask deployada en Heroku" />
-    <meta name="author" content="Labrador Brazda, Fernando Martin" />
-    <link rel="shortcut icon" href="logo-icono-delaapp#####" />
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+	<meta name="description"
+		content="Applicacion para crear lista de tareas con usuarios privado realizada en Python-Flask deployada en Heroku" />
+	<meta name="author" content="Labrador Brazda, Fernando Martin" />
+	<link rel="shortcut icon" href="logo-icono-delaapp#####" />
 	<title>{% block title %}{% endblock %} - To-do List</title>
-    <script src="https://kit.fontawesome.com/ad87122803.js" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/ad87122803.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
 </head>
 
 
 <body class="blocke-principal">
-	<header class="bOJlSs">
-		<h1 class="eDhFgq"><i class="fas fa-clipboard-check logo-app "></i>Lista de Tareas</h1>
-		<nav class="caepzu">
+	<header class="contenedor-encabezado">
+		<h1 class="titulo-app"><i class="fas fa-clipboard-check logo-app "></i>Lista de Tareas</h1>
+		<nav class="contenedor-logs">
 			{% if g.user %}
-			<span title="Usuario" class="ecshkw cursores"><i class="fas fa-user-alt hINVtW"></i><span
-					class="gkSMJF cursores">{{
+			<span title="Usuario" class="boton-logueo name-user"><i class="fas fa-user-alt icono-log"></i><span
+					class="letras-log">{{
 					g.user['username']
 					}}</span></span>
-			<a title="Salir" class="links" href="{{ url_for('auth.logout') }}"><button class="ecshkw"><i
-						class="fas fa-sign-out-alt hINVtW"></i><span class="gkSMJF">Cerrar
+			<a title="Salir" class="links" href="{{ url_for('auth.logout') }}"><button class="boton-logueo"><i
+						class="fas fa-sign-out-alt icono-log"></i><span class="letras-log">Cerrar
 						sesión</span></button></a>
 			{% else %}
 			<a title="Registrate" class="links" href="{{ url_for('auth.register') }}"><button
-					class="ecshkw">Registrarse</button></a>
-			<a title="Ingresa" class="links" href="{{ url_for('auth.login') }}"><button class="ecshkw"><i
-						class="fas fa-user-circle hINVtW"></i><span class="gkSMJF">Iniciar
+					class="boton-logueo">Registrarse</button></a>
+			<a title="Ingresa" class="links" href="{{ url_for('auth.login') }}"><button class="boton-logueo"><i
+						class="fas fa-user-circle icono-log"></i><span class="letras-log">Iniciar
 						sesión</span></button></a>
 			{% endif %}
 		</nav>
 
 	</header>
-	<span class="kRqbCZ"></span>
+	<span class="linea-separadora"></span>
 
-	<section class="content klwxIz">
-		<header class="hjwVit">
+	<section class="bloque-secundario">
+		<header class="titulos">
 			{% block header %}{% endblock %}
 		</header>
 
@@ -56,5 +56,5 @@
 	</section>
 
 </body>
-	
+
 </html>
