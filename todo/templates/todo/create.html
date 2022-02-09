@@ -5,17 +5,17 @@
 {% endblock %}
 
 {% block content %}
-<form class="bDuesm" method="POST">
-	<section class="pMNkX">
+<form class="contenedor-editarcrear" method="POST">
+	<section class="contenedor-letras-EC">
 		<!-- <label for="description">Descripcion</label> -->
-		<input class="dvFLAw jVoeih dmnlKK" placeholder="Cual es la nueva tarea?" name="description" id="description"
+		<input class="letras-editarcrear" placeholder="Cual es la nueva tarea?" name="description" id="description"
 			required />
 	</section>
-	<section class="hCdQli">
+	<section class="contenedor-botones">
 		<div class="left">
-			<a class="jhqZwE fuentes links " href="{{ url_for('todo.index') }}">cancelar</a>
+			<a class="botones-secundarios fuentes links " href="{{ url_for('todo.index') }}">cancelar</a>
 
-			<input class="gfRDmQ" type="submit" value="Guardar" />
+			<input class="boton-guardar" type="submit" value="Guardar" />
 		</div>
 	</section>
 </form>
