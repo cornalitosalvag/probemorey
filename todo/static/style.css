@@ -1,9 +1,4 @@
-/* * {
-  margin: 0;
-  padding: 0;
-} */
-
-html{
+html {
   margin: 8px;
 }
 
@@ -13,67 +8,60 @@ body {
   /* display: block; */
   /* margin: 8px; */
 }
+
 .links {
   text-decoration: none;
 }
+
 .fuentes {
   font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
-.cursores {
+
+.name-user {
   cursor: default !important;
   /* font-size: 13px; */
   /* font-weight: bold; */
   text-transform: uppercase;
 }
+
 input:focus,
 button:focus,
 textarea:focus {
   outline: none;
 }
 
+/* color boton tarea */
 .red {
   color: red;
 }
+
+/* titulos de paginas */
 h2 {
   margin: 0;
   color: white;
   font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
-}
-.subtitulo {
-  margin: 0;
-  font-size: 15px;
-  color: white;
-  font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol";
-}
-.memo {
-  margin-top: 18px;
+  cursor: default;
 }
 
-/* NO */
-/* div {
-  display: block;
-} */
-
-/* logo titulo app OK*/
+/* logo titulo app */
 .logo-app {
   width: 20px;
   margin-right: 4px;
 }
 
-/* englova el espacio del div general */
+/* Contiene toda la pagina en el body */
 .blocke-principal {
   /* padding: 0px 12px; */
   max-width: 620px;
   margin: auto;
 }
-/* div general */
-.bOJlSs {
+
+/* contenedor del encabezado */
+.contenedor-encabezado {
   /* background-color: inherit; */
   /* width: 100%; */
   height: 60px;
@@ -84,9 +72,10 @@ h2 {
   align-items: center;
 }
 
-/* clase de pomofocus */
-.eDhFgq {
+/* titulo app */
+.titulo-app {
   /* display: inline-block; */
+  cursor: default;
   color: white;
   margin: 0px;
   padding: 10px 0px;
@@ -95,15 +84,16 @@ h2 {
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
-/* clase de los logs */
 
-.caepzu {
+/* contenedor-logs */
+.contenedor-logs {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
 }
-/* botones */
-.ecshkw {
+
+/* botones logueo */
+.boton-logueo {
   display: flex;
   /* -webkit-box-align: center; */
   align-items: center;
@@ -122,41 +112,34 @@ h2 {
   border: none;
   color: white !important;
 }
-/* logo del boton */
-.hINVtW {
+
+/* logo del botones loguin */
+.icono-log {
   width: 16px;
 }
-/* letras del boton */
-.gkSMJF {
+
+/* letras del boton log */
+.letras-log {
   display: block;
   margin-left: 4px;
 }
 
 /* linea chochera */
-.kRqbCZ {
+.linea-separadora {
   display: block;
   background-color: rgba(0, 0, 0, 0.1);
   height: 1px;
   margin-bottom: 40px;
 }
 
-/* centra? */
-.iXfEkz {
-  text-align: center;
-}
-/* engoba principal ok */
-.klwxIz {
+/* engoba principal */
+.bloque-secundario {
   max-width: 480px;
   margin: 20px auto 42px;
 }
 
-/* engloba */
-.OCDuY {
-  max-width: 480px;
-  margin: 20px auto 42px;
-}
-/* titulo ok */
-.hjwVit {
+/* titulo */
+.titulos {
   display: flex;
   -webkit-box-pack: justify;
   justify-content: space-between;
@@ -166,24 +149,9 @@ h2 {
   padding-bottom: 14px;
   margin-bottom: 18px;
 }
-/* texto titulo */
-.gNEBjN {
-  font-size: 18px;
-  font-weight: bold;
-}
-/* titulo */
-.bgYAXY {
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.6);
-  padding-bottom: 14px;
-}
 
-/* envoltorio principal tareas ok*/
-.cmBgVX {
+/* envoltorio principal tareas */
+.contenedor-tarea {
   width: 100%;
   background-color: white;
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 4px;
@@ -197,8 +165,13 @@ h2 {
   transition: unset;
 }
 
-/* evuelve especifico cada  tareas*/
-.hPcLhU {
+/* borde izquierdo sobreado al posicionarse */
+.contenedor-tarea:hover {
+  border-left: 6px solid rgb(204, 204, 204);
+}
+
+/* evuelve especifico cada tareas */
+.contenido-tarea {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
@@ -206,8 +179,9 @@ h2 {
   justify-content: space-between;
   width: 100%;
 }
-/* la tarea */
-.jFXLnO {
+
+/* la tarea y tilde */
+.tarea-tilde {
   display: flex;
   -webkit-box-pack: start;
   justify-content: flex-start;
@@ -224,16 +198,16 @@ h2 {
     "Segoe UI Symbol";
   color: rgb(85, 85, 85);
 }
+
 /* tilde de la tarea */
 .tilde {
   display: inline-block;
   margin-right: 10px;
-
   font-size: 26px;
 }
 
-/* items de las tarea ok*/
-.iWIiAw {
+/*logo eliminar tarea */
+.logo-eliminar {
   /* display: flex; */
   /* -webkit-box-align: center; */
   /* align-items: center; */
@@ -241,8 +215,9 @@ h2 {
   padding-right: 14px;
   /* text-align: center; */
 }
-/* editar */
-.dtgVaS {
+
+/* letra editar */
+.letra-editar {
   text-decoration: none;
   display: inline-block;
   color: rgb(232 99 99);
@@ -253,8 +228,8 @@ h2 {
   text-align: right;
 }
 
-/* estetica del boton ok */
-.bbfodJ {
+/* boton eliminar tarea */
+.boton-eliminar {
   cursor: pointer;
   /* border: 1px solid rgb(223, 223, 223); */
   border: none;
@@ -264,15 +239,9 @@ h2 {
   width: 30px;
   font-size: 20px;
 }
-/* item del final tarea */
-.diliiT {
-  width: 30px;
-  padding-right: 14px;
-  text-align: center;
-}
 
-/* letras de la tarea */
-.hMzHoF {
+/* letras de la tarea ok */
+.tarea {
   color: rgb(85, 85, 85);
   font-weight: bold;
   width: 85%;
@@ -282,8 +251,8 @@ h2 {
   line-height: 1.5em;
 }
 
-/* loguin------------------ */
-.kpsPWn {
+/* contenedor loguin y registro ------------------ */
+.contenedor-log {
   background-color: white;
   border-radius: 8px;
   box-shadow: rgb(196 196 196) 0px 1px 0px;
@@ -291,19 +260,20 @@ h2 {
   box-sizing: border-box;
   width: 100%;
 }
-/* email */
-.kQKBvK {
+
+/* label de log y reg */
+.letras-reglog {
   display: block;
   color: rgb(196, 196, 196);
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   margin-top: 20px;
   margin-bottom: 8px;
 }
 
-/* infor */
-.gCBBEJ {
+/* input log y reg */
+.input-log {
   border-radius: 4px;
   background-color: rgb(239, 239, 239);
   font-size: 16px;
@@ -314,8 +284,9 @@ h2 {
   width: 100%;
   box-sizing: border-box;
 }
-/* boton */
-.fdeTbp {
+
+/* boton log y reg */
+.boton-log {
   margin-top: 28px;
   display: flex;
   -webkit-box-align: center;
@@ -335,19 +306,12 @@ h2 {
   border: 2px solid rgb(34, 34, 34);
   width: 100%;
 }
-.fdeTbp:hover {
+
+.boton-log:hover {
   opacity: 1;
 }
 
-/* sin ussuario? */
-.iziuDH {
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  margin-top: 20px;
-}
-/* nueva tarea */
-.inuAKn {
+.contenedor-nuevatarea {
   width: 100%;
   height: 60px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -362,11 +326,12 @@ h2 {
   margin-top: 12px;
   border: 2px dashed rgba(255, 255, 255, 0.4);
 }
-.inuAKn:hover {
+
+.contenedor-nuevatarea:hover {
   opacity: 1;
 }
-/* palabra nueva tarea */
-.iRkBTm {
+
+.letras-nuevatarea {
   font-family: "ArialRounded", -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
@@ -374,16 +339,18 @@ h2 {
   opacity: 0.8;
   font-weight: bold;
 }
+
 /* icono nueva tarea */
-.eDIJZH {
+.icono-nuevatarea {
   color: white;
   width: 18px;
   margin-right: 8px;
   opacity: 0.8;
   font-size: 20px;
 }
-/* cuadrado cheto editar */
-.bDuesm {
+
+/* contenedor editar y crear */
+.contenedor-editarcrear {
   background-color: white;
   border-radius: 8px;
   text-align: left;
@@ -391,20 +358,14 @@ h2 {
   box-shadow: rgb(0 0 0 / 15%) 0px 10px 20px, rgb(0 0 0 / 10%) 0px 3px 6px;
   animation: 0.1s ease-in-out 0s 1 normal none running expand;
 }
-/* sub recuadro */
-.pMNkX {
+
+/* conenedor texto editar y crear */
+.contenedor-letras-EC {
   padding: 10px 20px 0px;
 }
-/* lo que se va editar o donde va el texto NO*/
-/* .dvFLAw {
-  position: relative;
-  padding: 8px 0px 18px;
-} */
-/* NO */
-/* .jVoeih {
-  padding: 8px 0px;
-} */
-.dmnlKK {
+
+/* letras editar y crear ok*/
+.letras-editarcrear {
   /* border-radius: 4px; */
   font-size: 22px;
   padding: 10px 0px;
@@ -415,13 +376,15 @@ h2 {
   /* box-sizing: border-box; */
   font-weight: bold;
 }
-.dmnlKK::placeholder {
+
+.letras-editarcrear::placeholder {
   opacity: 0.5;
 }
-/* ultimo baner guardar cancelar(patra) */
-.hCdQli {
+
+/* contenedor botones guardar cancelar */
+.contenedor-botones {
   padding: 14px 20px;
-  /* text-align: right; */
+  text-align: right;
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   background-color: rgb(239, 239, 239);
@@ -431,23 +394,25 @@ h2 {
   /* -webkit-box-align: center; */
   align-items: center;
 }
-.Qli-derecha {
+
+.contenedor-botones {
   flex-direction: row-reverse;
 }
 
-.QLI {
+.contenedor-completado {
   display: flex;
-
   justify-content: center;
 }
-/* alineado a la derecha */
+
+/* alineado a la derecha SIN UTILIDAD */
 .left {
   float: right;
   width: 100%;
   overflow: auto;
 }
-/* cancelar */
-.jhqZwE {
+
+/* botones secundarios cancelar-eliminar-completado ok */
+.botones-secundarios {
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -467,29 +432,9 @@ h2 {
   font-weight: bold;
   box-shadow: none;
 }
-/* guardar */
-.hrCnhU {
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  text-align: center;
-  border-radius: 4px;
-  cursor: pointer;
-  box-shadow: rgb(0 0 0 / 20%) 0px 2px 2px;
-  color: white;
-  opacity: 0.9;
-  font-size: 14px;
-  padding: 8px 12px;
-  min-width: 70px;
-  border: 2px solid rgb(171, 171, 171);
-  pointer-events: none;
-  display: inline-block;
-  background-color: rgb(171, 171, 171);
-}
 
-/* botton activo */
-.gfRDmQ {
+/* boton guardar ok */
+.boton-guardar {
   -webkit-box-align: center;
   align-items: center;
   -webkit-box-pack: center;
@@ -508,8 +453,7 @@ h2 {
   display: inline-block;
 }
 
-/* cheked */
-/* Hide the browser's default checkbox */
+/* Boton completado + icono activo  ok*/
 .cheche input {
   position: absolute;
   opacity: 0;
@@ -518,36 +462,23 @@ h2 {
   width: 0;
 }
 
-/* Create a custom checkbox */
+/* color boton */
 .checkmarkk {
   color: red;
 }
 
-/* On mouse-over, add a grey background color */
+/* hover boton */
 .cheche:hover input ~ .checkmarkk {
   color: rgb(182, 0, 0);
 }
 
-/* When the checkbox is checked, add a blue background */
+/* boton presionado  */
 .cheche input:checked ~ .checkmarkk {
   color: rgb(85, 85, 85);
   text-decoration: line-through double red;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
-/* .checkmarkk:after {
-  content: "";
+/* buscar la manera de no repetir contenido de las clases, por ejemplo la clase fuentes puede ser agregada para no repetir la fuente
+de igual manera alguna cofiguracion de flex-box repetitiva, esto probar por ultimo. luego de chequear clase por clase */
 
-  color: green;
-} */
-
-/* Show the checkmark when checked */
-/* .cheche input:checked ~ .checkmarkk:after {
-  display: block;
-  color: #2196f3;
-} */
-
-/* Style the checkmark/indicator */
-/* .cheche .checkmarkk:after {
-  color: green;
-} */
+/* solo a la palabra completado le agregaria un poco de pading inferior, guarda que esta conectado con todos los botones secundarios */
