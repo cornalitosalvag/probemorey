@@ -90,6 +90,8 @@ h2 {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
+  justify-content: space-between;
+  width: 222px;
 }
 
 /* botones logueo */
@@ -105,7 +107,7 @@ h2 {
   opacity: 0.9;
   background: none rgba(255, 255, 255, 0.2);
   box-shadow: none;
-  margin-left: 10px;
+  /* margin-left: 10px;  nop*/
   /* font-size: 13px; */
   padding: 8px 12px;
   min-width: 70px;
@@ -479,6 +481,10 @@ h2 {
 }
 
 @media only screen and (max-width: 576px) {
+  .contenedor-logs {
+    width: 122px;
+  }
+
   /* letras del loguin */
   .letras-log {
     display: none;
@@ -498,3 +504,5 @@ h2 {
 de igual manera alguna cofiguracion de flex-box repetitiva, esto probar por ultimo. luego de chequear clase por clase */
 
 /* solo a la palabra completado le agregaria un poco de pading inferior, guarda que esta conectado con todos los botones secundarios */
+
+/* el whidth del contenedor log se puede acomodar de otra manera, en pixels no me cierra */
