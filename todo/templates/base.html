@@ -7,10 +7,11 @@
 	<meta name="description"
 		content="Applicacion para crear lista de tareas con usuarios privado realizada en Python-Flask deployada en Heroku" />
 	<meta name="author" content="Labrador Brazda, Fernando Martin" />
-	<link rel="shortcut icon" href="logo-icono-delaapp#####" />
+	<link rel="shortcut icon" href="{{ url_for('static', filename='image/list-check-solid.svg') }}" />
 	<title>{% block title %}{% endblock %} - To-do List</title>
 	<script src="https://kit.fontawesome.com/ad87122803.js" crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
 
 </head>
 
@@ -24,15 +25,15 @@
 					class="letras-log">{{
 					g.user['username']
 					}}</span></span>
-			<a title="Salir" class="links" href="{{ url_for('auth.logout') }}"><button class="boton-logueo"><i
-						class="fas fa-sign-out-alt icono-log"></i><span class="letras-log">Cerrar
-						sesión</span></button></a>
+			<a title="Salir" class="links ligustro boton-logueo" href="{{ url_for('auth.logout') }}"><i
+					class="fas fa-sign-out-alt icono-log"></i><span class="letras-log">Cerrar
+					sesión</span></a>
 			{% else %}
-			<a title="Registrate" class="links" href="{{ url_for('auth.register') }}"><button
-					class="boton-logueo">Registrarse</button></a>
-			<a title="Ingresa" class="links" href="{{ url_for('auth.login') }}"><button class="boton-logueo"><i
-						class="fas fa-user-circle icono-log"></i><span class="letras-log">Iniciar
-						sesión</span></button></a>
+			<a title="Registrate" class="links ligustro boton-logueo" href="{{ url_for('auth.register') }}"><span
+					class="">Registrarse</span></a>
+			<a title="Ingresa" class="links ligustro boton-logueo" href="{{ url_for('auth.login') }}"><i
+					class="fas fa-user-circle icono-log"></i><span class="letras-log">Iniciar
+					sesión</span></a>
 			{% endif %}
 		</nav>
 
@@ -45,15 +46,33 @@
 		</header>
 
 		{% for message in get_flashed_messages() %}
-		<div class="flash">
-			<p>{{ message }}</p>
-		</div>
+
+		<p class="globo i abajo-derecha yellow">
+			{{ message }}</p>
+
 		{% endfor %}
 
 
 		{% block content %}{% endblock %}
 
 	</section>
+
+	<footer class="aa">
+		<div class="redlinks">
+			<a href="https://github.com/FernandoLabrador/" target="_blank" rel="noopener"><img
+					src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/github.svg" alt="Github icon"></a>
+			<a href="mailto:flabradormb@gmail.com" target="_blank" rel="noopener"><img
+					src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/gmail.svg" alt="Mail icon"></a>
+
+			<a href="https://www.linkedin.com/in/fernandolabradorb/" target="_blank" rel="noopener">
+				<img src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="Linkedin icon">
+			</a>
+
+		</div>
+		<div class="made">Made with &lt;3 by <a class="links" href="{{ url_for('portfolio') }}" target="_blank"
+				rel="noopener">Fernando M. Labrador B. 🌱</a></div>
+		<div class="allrights">©Lista de Tareas 2021. All Rights Reserved.</div>
+	</footer>
 
 </body>
 

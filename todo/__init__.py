@@ -23,9 +23,9 @@ def create_app():
     app.register_blueprint(auth.bp)
     app.register_blueprint(todo.bp)
 
-    @app.route('/hola')
-    def hola():
-        return 'pichuletincito y pichulitencita💕'
+    @app.route('/portfolio')
+    def portfolio():
+        return '<h1>Aqui iria la pagina de mi portfolio</h1>'
 
     return app
 

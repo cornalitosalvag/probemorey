@@ -7,14 +7,12 @@
 {% block content %}
 <form class="contenedor-editarcrear" method="POST">
 	<section class="contenedor-letras-EC">
-		<!-- <label for="description">Descripcion</label> -->
 		<input class="letras-editarcrear" placeholder="Cual es la nueva tarea?" name="description" id="description"
 			required />
 	</section>
 	<section class="contenedor-botones">
 		<div class="left">
-			<a class="botones-secundarios fuentes links " href="{{ url_for('todo.index') }}">cancelar</a>
-
+			<a class="botones-secundarios fuentes links" href="{{ url_for('todo.index') }}">cancelar</a>
 			<input class="boton-guardar" type="submit" value="Guardar" />
 		</div>
 	</section>

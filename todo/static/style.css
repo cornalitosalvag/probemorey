@@ -1,12 +1,15 @@
 html {
-  margin: 8px;
+  margin: 1vh;
 }
 
 body {
   background-color: rgb(217, 85, 80);
   /* height: 80vh; */
-  /* display: block; */
-  /* margin: 8px; */
+  display: block; /* tiene utilidad?*/
+
+  position: relative;
+
+  min-height: 97vh;
 }
 
 .links {
@@ -58,6 +61,8 @@ h2 {
   /* padding: 0px 12px; */
   max-width: 620px;
   margin: auto;
+
+  /* padding-bottom: 5em; */
 }
 
 /* contenedor del encabezado */
@@ -90,8 +95,12 @@ h2 {
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  justify-content: space-between;
-  width: 222px;
+  /* justify-content: space-between;
+  width: 222px; */
+}
+/* espacio botones NO */
+.ligustro {
+  margin-left: 10px;
 }
 
 /* botones logueo */
@@ -137,7 +146,10 @@ h2 {
 /* engoba principal */
 .bloque-secundario {
   max-width: 480px;
+  /* margin: 20px 42px; */
   margin: 20px auto 42px;
+  padding-bottom: 9.5em;
+  margin-bottom: 0px;
 }
 
 /* titulo */
@@ -224,8 +236,8 @@ h2 {
   display: inline-block;
   color: rgb(232 99 99);
   font-weight: bold;
-  margin-right: 18px;
-  width: 40px;
+  /* margin-right: 18px; NO*/
+  width: 51px;
   font-size: 18px;
   text-align: right;
 }
@@ -314,7 +326,7 @@ h2 {
 }
 
 .contenedor-nuevatarea {
-  width: 100%;
+  /* width: 100%; */
   height: 60px;
   background-color: rgba(0, 0, 0, 0.1);
   border-radius: 8px;
@@ -364,6 +376,7 @@ h2 {
 /* conenedor texto editar y crear */
 .contenedor-letras-EC {
   padding: 10px 20px 0px;
+  margin-bottom: 8px;
 }
 
 /* letras editar y crear ok*/
@@ -395,10 +408,8 @@ h2 {
   justify-content: space-between;
   /* -webkit-box-align: center; */
   align-items: center;
-}
-
-.contenedor-botones {
   flex-direction: row-reverse;
+  margin-top: 8px;
 }
 
 .contenedor-completado {
@@ -424,10 +435,10 @@ h2 {
   cursor: pointer;
   opacity: 0.9;
   font-size: 16px;
-  padding: 8px 12px;
+  margin: 0px 26px 0px 12px;
   min-width: 70px;
   display: inline-block;
-  margin-right: 14px;
+  /* margin-right: 14px; */
   background: none;
   border: none;
   color: rgb(136, 136, 136);
@@ -481,9 +492,9 @@ h2 {
 }
 
 @media only screen and (max-width: 576px) {
-  .contenedor-logs {
+  /* .contenedor-logs {
     width: 122px;
-  }
+  } */
 
   /* letras del loguin */
   .letras-log {
@@ -498,6 +509,9 @@ h2 {
   .icono-log {
     font-size: 17px;
   }
+  .globo.i {
+    width: 55%;
+  }
 }
 
 /* buscar la manera de no repetir contenido de las clases, por ejemplo la clase fuentes puede ser agregada para no repetir la fuente
@@ -506,3 +520,94 @@ de igual manera alguna cofiguracion de flex-box repetitiva, esto probar por ulti
 /* solo a la palabra completado le agregaria un poco de pading inferior, guarda que esta conectado con todos los botones secundarios */
 
 /* el whidth del contenedor log se puede acomodar de otra manera, en pixels no me cierra */
+
+/* esta bueno que las clases tengan los valores como corresponde, irse a apuntes facu. en em y % etc */
+
+.globo {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 12px;
+  border-radius: var(--borde);
+  padding: var(--borde);
+  --borde: 1em;
+  font-family: sans-serif;
+  z-index: 1;
+  background-color: white;
+  filter: drop-shadow(0px 0px 1px black);
+}
+
+.globo.i {
+  width: 30%;
+  top: 21%;
+  left: 26%;
+}
+
+.globo::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  width: var(--colita);
+  height: var(--colita);
+}
+
+.globo.abajo-derecha::before {
+  --colita: 20px;
+  left: 15%;
+  bottom: calc(var(--colita) / -1.5);
+  transform: skewY(30deg) rotateZ(-30deg);
+  border-radius: 0 0 0 10em;
+  box-shadow: inset calc(var(--colita) / 2) calc(var(--colita) / 3) 0 0 white;
+}
+
+.globo.yellow::before {
+  background-color: rgba(255, 255, 0, 0.8);
+  color: rgba(255, 2, 0, 0.5);
+  animation: cambio-color ease 5s infinite both;
+  -webkit-animation: cambio-color ease 5s infinite both;
+}
+
+@keyframes cambio-color {
+  45%,
+  55% {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+  }
+}
+
+footer {
+  margin-top: 40px;
+  border-top: 2px solid #efefef;
+  text-align: center;
+  padding-top: 17px;
+  color: hsl(0deg 0% 11%);
+  /* padding-bottom: 20px; */
+
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.redlinks {
+  display: flex;
+  justify-content: center;
+  /* margin-bottom: 18px; */
+}
+.redlinks img {
+  background-color: #ffbdbdcc;
+  width: 28px;
+  height: 28px;
+  border-radius: 100px;
+  padding: 6px;
+  margin: 0px 6px;
+  margin-bottom: 8px;
+}
+/* esta clase no se puede ahorrar ********** */
+.made {
+  /* margin-top: 10px; */
+  margin-bottom: 12px;
+}
+
+.allrights {
+  font-size: 12px;
+  color: hsl(0deg 0% 8%);
+}

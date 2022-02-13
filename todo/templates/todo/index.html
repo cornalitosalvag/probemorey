@@ -3,15 +3,15 @@
 {% block header %}
 <h2>{% block title %}Tareas{% endblock %}</h2>
 {% if g.user %}
-<!-- <a class="action" href="{{ url_for('todo.create') }}">Nuevo</a> -->
+
 {% endif %}
 {% endblock %}
 
 {% block content %}
-<!-- <ul> -->
+
 {% for todo in todos %}
 
-<!-- <li class="todo cmBgVX"> -->
+
 <div class="contenedor-tarea">
 	<div class="contenido-tarea">
 		<span class="tarea-tilde">
@@ -27,21 +27,17 @@
 
 		<a class="action letra-editar" href="{{ url_for('todo.update', id=todo['id']) }}">Editar</a>
 		<form class="logo-eliminar" action="{{ url_for('todo.delete', id=todo['id']) }}" method="post">
-			<button class="boton-eliminar" type="submit" onclick="return confirm('Estas seguro de querer eliminarlo?')"><i
-					class="far fa-trash-alt"></i></button>
+			<button name="Eliminar tarea" class="boton-eliminar" type="submit"
+				onclick="return confirm('Estas seguro de querer eliminarlo?')"><i class="far fa-trash-alt"></i></button>
 			<!-- <input class="danger" type="submit" value="X"
 				onclick="return confirm('Estas seguro de querer eliminarlo?')" /> -->
 		</form>
 	</div>
 </div>
-<!-- nueva tarea -->
 
-<!-- </li> -->
-
-<!-- cancelando el margin del H1 O CAMBIANDO ESTO POR OTRA SEMANTICA SE SALE EL MARGIN -->
 
 {% if not loop.last %}
-<!-- <hr> -->
+
 {% endif %}
 {% endfor %}
 <a class="action links" href="{{ url_for('todo.create') }}">
@@ -49,5 +45,5 @@
 		<div class="letras-nuevatarea">Nueva Tarea</div>
 	</div>
 </a>
-<!-- </ul> -->
+
 {% endblock %}
