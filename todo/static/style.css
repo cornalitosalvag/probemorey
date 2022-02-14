@@ -35,6 +35,11 @@ textarea:focus {
   outline: none;
 }
 
+a:-webkit-any-link {
+  /* color: -webkit-link; */
+  cursor: pointer;
+}
+
 /* color boton tarea */
 .red {
   color: red;
