@@ -498,6 +498,8 @@ h2 {
 
   html {
     padding: 1vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   body {
