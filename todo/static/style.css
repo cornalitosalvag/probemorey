@@ -496,10 +496,18 @@ h2 {
     width: 122px;
  } */
 
-  body {
-    min-height: 93vh;
+  html {
+    padding: 1vh;
   }
 
+  .bloque-secundario {
+    padding-bottom: 8.5em;
+  }
+
+  h2 {
+    margin-left: 15px;
+    font-size: 1.3em;
+  }
   /* letras del loguin */
   .letras-log {
     display: none;
