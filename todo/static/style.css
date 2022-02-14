@@ -497,21 +497,24 @@ h2 {
  } */
 
   html {
-    padding: 1vh;
+    padding: 0 1vh;
     margin-bottom: 0;
-    padding-bottom: 0;
   }
 
   body {
     min-height: 94vh;
   }
   .bloque-secundario {
-    padding-bottom: 8.5em;
+    padding-bottom: 7.5em;
   }
 
   h2 {
     margin-left: 15px;
     font-size: 1.3em;
+  }
+
+  .linea-separadora {
+    margin-bottom: 32px;
   }
   /* letras del loguin */
   .letras-log {
