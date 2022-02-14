@@ -500,6 +500,9 @@ h2 {
     padding: 1vh;
   }
 
+  body {
+    min-height: 94vh;
+  }
   .bloque-secundario {
     padding-bottom: 8.5em;
   }
