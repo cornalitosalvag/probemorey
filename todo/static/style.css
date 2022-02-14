@@ -494,7 +494,11 @@ h2 {
 @media only screen and (max-width: 576px) {
   /* .contenedor-logs {
     width: 122px;
-  } */
+ } */
+
+  body {
+    min-height: 95vh;
+  }
 
   /* letras del loguin */
   .letras-log {
