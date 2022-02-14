@@ -512,12 +512,15 @@ h2 {
     margin-left: 15px;
     font-size: 1.3em;
   }
-  .contenedor-nuevatarea {
-    margin-bottom: 1em;
-  }
+
   .linea-separadora {
     margin-bottom: 32px;
   }
+
+  .contenedor-nuevatarea {
+    margin-bottom: 1em;
+  }
+
   /* letras del loguin */
   .letras-log {
     display: none;
