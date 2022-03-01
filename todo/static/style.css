@@ -107,7 +107,7 @@ textarea:focus {
 .bloque-secundario {
   max-width: 480px;
   margin: 20px auto 42px;
-  padding-bottom: 9.5em;
+  padding-bottom: 30%;
   margin-bottom: 0px;
 }
 
